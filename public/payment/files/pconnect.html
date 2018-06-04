@@ -1,0 +1,206 @@
+
+<!-- saved from url=(0241)https://payments.zoho.com/wms/pconnect.sas?prd=ZP&uname=53615412&opera=false&samedomain=false&ie=false&safari=true&nocache=1455689177964&config=15&wmscont=wms&nodomainchange=true&retrycount=1&staticdomain=js.zohostatic.com&staticversion=v108 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+</head>
+
+<body>
+<script>
+	
+	
+		var infomsg = null;
+        var infomsgtype = null;
+        
+
+	var wmssubdomain= 'zoho.com'; //NO OUTPUTENCODING
+	var wmsserver = 'wms1.zoho.com'; //NO OUTPUTENCODING
+        
+        
+        var prd = 'ZP';
+	var uname = '53615412';
+	var _CFPARAMNAME = "rescsrp"; //NO OUTPUTENCODING
+    var _CFTOKENCOOKIENAME = "rescsr"; //NO OUTPUTENCODING
+    var _CHATCSRFPARAMNAME = "zchat_csrparam"; //NO OUTPUTENCODING
+    var _CHATCSRFCOOKIENAME = "CT_CSRF_TOKEN"; //NO OUTPUTENCODING
+	var _HTML = "wmsconnector";
+        var samedomain = false;
+        var _WMSCONT = "wms";
+	var _SSTSERVICE = false;
+	var _IAMSERVER = "https://accounts.zoho.com"; //NO OUTPUTENCODING
+       var _SERVICE = "ZohoPayments"; //NO OUTPUTENCODING
+	var _USERCONFIG = {"gsv":"v13","zvv":"v53","connmode":"ws"};  //NO OUTPUTENCODING
+    var _NODOMAINCHANGE = "true";
+    var _uselp = "false";
+    var _SDOMAIN = "wms1.zoho.com"; //NO OUTPUTENCODING
+    var _WMSSETTINGS = {}; //NO OUTPUTENCODING
+    _WMSSETTINGS.chatenabled = true; //NO OUTPUTENCODING
+    var _SERVICEDISPNAME = "Reseller Store"; //NO OUTPUTENCODING
+    var _CHATSERVERURL = "chat.zoho.com"; //NO OUTPUTENCODING
+    var _CALENDARSERVERURL = "calendar.zoho.com"; //NO OUTPUTENCODING
+    var _MAILSERVERURL = "mail.zoho.com"; //NO OUTPUTENCODING
+    var _MEETINGSERVERURL = "meeting.zoho.com"; //NO OUTPUTENCODING
+    var _PHOTOSERVERURL = "contacts.zoho.com"; //NO OUTPUTENCODING
+    var _JSSTATICDOMAIN = 'js.zohostatic.com';
+    var _JSSTATICVERSION = 'v108';
+    var staticdetails;
+    if( _WMSSETTINGS && _WMSSETTINGS.deact )
+    {
+        function indexOf( arrayobj, elem )
+        {
+            if( Array.prototype.indexOf )
+            {
+                return Array.prototype.indexOf.call( arrayobj, elem );
+            }
+            else
+            {
+                for( var i = 0; i < arrayobj.length; i++ )
+                {
+                    if( elem === arrayobj[i] )
+                    {
+                        return i;
+                    }
+                }
+                return -1;
+            }
+        }
+        var deactarr = _WMSSETTINGS.deact.split(","); 
+        if( indexOf( deactarr, prd ) !== -1 )
+        {
+            var deactchat = true;
+        }
+    }
+    if( _WMSSETTINGS.chatenabled === false )
+    {
+        var deactchat = true;
+    }
+
+    
+        var filename = "wmsbridge.js"; //No I18N
+    
+
+     function addEvent(el, evname, func)
+     {
+         if (el.attachEvent)
+         { // IE
+             el.attachEvent("on"+evname, func);
+         }
+         else if (el.addEventListener)
+         { 
+             el.addEventListener(evname, func, true);
+         }
+     }
+function loadjs( url )
+{
+    var screlem = document.createElement("script");
+    if( screlem.readyState )//IE8 support
+    {
+        screlem.onreadystatechange = function()
+        {
+            if( this.readyState == "loaded" || this.readyState == "complete" )
+            {
+                this.onreadystatechange = null;
+                loadwms();
+            }
+        }
+    }
+    else
+    {
+        screlem.onload = function()
+        {
+            loadwms();
+        }
+    }
+    screlem.src = url;
+    screlem.type = "text/javascript";
+    document.body.appendChild( screlem );
+}
+
+if( _JSSTATICDOMAIN === "null" )//When all the clients moved to latest version we can remove this if part
+{
+
+    addEvent( window, "message", function(ev)//No I18N
+            {
+                function isValidDomain()
+                {
+                    var domain = removeport( ev.origin );
+                    function removeport( str )
+                    {
+                        return str.replace(/:\d*$/,"");
+                    }
+                    if( wmssubdomain && domain )
+                    {
+                        if( domain === window.location.protocol + "//" + wmssubdomain )
+                        {
+                            return true;
+                        }
+                        else if(domain.split(".").length > 2)
+                        {
+                            return domain.substring( domain.length - (wmssubdomain.length+1) ) == "."+wmssubdomain;
+                        }
+                    }
+                    return false;
+                }
+                if( !isValidDomain() )
+                {
+                    throw new Error("Domain validation failed");//No I18N
+                }
+
+                var data = JSON.parse( ev.data );
+                var opr = data[0];
+                if( opr === "staticdetails" )
+                {
+                    staticdetails = data[1];
+                    var lfromstatic = staticdetails.lfromstatic;
+                    var jsstaticdomain = staticdetails.jsstaticdomain;
+                    var staticversion =  staticdetails.staticversion;
+                    var docprotocol = document.location.protocol;
+                    staticversion += docprotocol == "http:" ? "" : "_https"; //No I18N
+
+                    if( lfromstatic )
+                    {
+                        var url = docprotocol + "//" + jsstaticdomain + "/ichat/" + staticversion +"/js/"+ filename;
+                        loadjs( url );
+                    }
+                    else
+                    {
+                        if( _NODOMAINCHANGE === "true" )
+                        {
+                            var url = "/" + _WMSCONT + "/javascript/bar/" + filename + "?version=" + staticversion;//No I18N
+                        }
+                        else
+                        {
+                            var url = "/" + _WMSCONT + "/javascript/embed/" + filename + "?version=" + staticversion;//No I18N
+                        }
+                        loadjs( url );
+                    }
+                }
+            });
+}else{
+
+
+    var docprotocol = document.location.protocol;
+    _JSSTATICVERSION += docprotocol == "http:" ? "" : "_https"; //No I18N
+
+    if( _JSSTATICDOMAIN !== "null" )
+    {
+        var url = docprotocol + "//" + _JSSTATICDOMAIN + "/ichat/" + _JSSTATICVERSION +"/js/"+ filename;
+        loadjs( url );
+    }
+    else
+    {
+        if( _NODOMAINCHANGE === "true" )
+        {
+            var url = "/" + _WMSCONT + "/javascript/bar/" + filename + "?version=" + _JSSTATICVERSION;//No I18N
+        }
+        else
+        {
+            var url = "/" + _WMSCONT + "/javascript/embed/" + filename + "?version=" + _JSSTATICVERSION;//No I18N
+        }
+        loadjs( url );
+    }
+}
+</script><script src="wmsbridge.js" type="text/javascript"></script>
+
+
+
+<iframe name="wms" src="wmsconnector.html"></iframe></body></html>

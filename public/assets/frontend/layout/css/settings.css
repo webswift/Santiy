@@ -1,0 +1,646 @@
+/* =================== */
+/*   Pricing Wrapper   */
+/* =================== */
+.pricing-wrapper {
+  font-family: roboto;
+}
+
+.pricing-wrapper:hover .current {
+  top: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.pricing-wrapper:hover .current .pricing-card {
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+  box-shadow: none;
+}
+
+.pricing-wrapper:hover .current .pricing-footer {
+  height: 80px;
+}
+
+.pricing-wrapper:hover .current .pricing-footer a {
+  bottom: 0;
+  position: relative;
+}
+
+.pricing-wrapper:hover .current:hover {
+  top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pricing-wrapper:hover .current:hover .pricing-card {
+  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.25);
+}
+
+.pricing-wrapper:hover .current:hover .pricing-footer {
+  height: 120px;
+}
+
+.pricing-wrapper:hover .current:hover .pricing-footer a {
+  bottom: -20px;
+  position: relative;
+}
+
+.stripped-table [class*=col-] {
+  padding: 0;
+  margin: -1px;
+}
+
+.stripped-table .pricing-col {
+  padding: 20px 0;
+}
+
+.stripped-table.current {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.stripped-table .ribbon {
+  left: calc(100% - 124px);
+}
+
+/* =================== */
+/*   Pricing Cards     */
+/* =================== */
+.pricing-card {
+  position: relative;
+  border: 1px solid #ddd;
+  width: 100%;
+  top: 0;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+  z-index: 99;
+}
+
+/* =================== */
+/*   Pricing Header    */
+/* =================== */
+.pricing-header {
+  background: #fff;
+  position: relative;
+  height: 200px;
+  border-bottom: 1px solid #1976d2;
+  margin: -1px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.pricing-header h5 {
+  background: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0 auto;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+.pricing-header p {
+  margin: 0 auto;
+  color: #fff;
+  display: inline-block;
+  font-style: italic;
+}
+
+/* =================== */
+/*   Pricing Box       */
+/* =================== */
+.price-box {
+  border-radius: 100px;
+  display: block;
+  margin: 25px auto;
+  position: relative;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.price-box:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px white inset, 0 1px 2px transparent;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.price-box .price {
+  color: #fff;
+  display: inline-block;
+  font-family: roboto;
+  font-size: 34px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: -2px;
+}
+
+.price-box .currency {
+  font-size: 50%;
+  font-weight: 600;
+  left: -10px;
+  line-height: inherit;
+  position: absolute;
+  top: -6px;
+  letter-spacing: 0;
+}
+
+.price-box .plan {
+  bottom: -26px;
+  font-family: roboto;
+  font-size: 36%;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0px !important;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-transform: capitalize;
+}
+
+/* ============================ */
+/*   Pricing Feature(Content)   */
+/* ============================ */
+.pricing-feature {
+  position: relative;
+  text-align: left;
+}
+
+.pricing-feature li {
+  list-style: none;
+  padding: 13px 0;
+  border-bottom: 1px solid #ddd;
+  background: #eee;
+}
+
+.pricing-feature li:last-child {
+  border-bottom: none;
+}
+
+.pricing-feature li span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.pricing-feature li span, .pricing-feature li i {
+  float: right;
+}
+
+.pricing-feature li p {
+  margin: 0;
+  font-size: 13.5px;
+  text-transform: capitalize;
+  padding: 0 20px;
+  line-height: normal;
+}
+
+/* ============================ */
+/*   Pricing Footer             */
+/* ============================ */
+.pricing-footer {
+  border-top: 1px solid #ddd;
+  padding: 0 20px;
+  height: 80px;
+  -webkit-transition: height 0.2s linear 0s;
+          transition: height 0.2s linear 0s;
+  text-align: center;
+}
+
+.pricing-footer a {
+  bottom: 0;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* =================== */
+/*   Pricing Ribbons     */
+/* =================== */
+.ribbon {
+  background: #f50057;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16);
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  position: absolute;
+  left: calc(100% - 110px);
+  top: 70px;
+  width: 35px;
+  z-index: 10;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  border-radius: 100px;
+  float: right;
+  cursor: pointer;
+}
+
+.ribbon:hover {
+  width: 90px;
+}
+
+.ribbon:hover span {
+  visibility: visible;
+  -webkit-transition: all 0.2s linear 0.18s;
+          transition: all 0.2s linear 0.18s;
+}
+
+.ribbon span {
+  top: 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  float: left;
+  visibility: hidden;
+}
+
+.ribbon i {
+  color: #ffee58;
+  font-weight: 800;
+  font-size: 14px;
+  margin: 11px;
+  z-index: 10;
+  float: left;
+}
+
+/* ======================= */
+/*   Pricing Comparison    */
+/* ======================= */
+.comparison-table [class*=col-] {
+  padding: 0;
+  margin: -1px;
+}
+
+.comparison-table .pricing-col {
+  padding: 20px 0;
+}
+
+.comparison-table.current {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.comparison-table [class*=col-]:first-child {
+  margin: 0;
+}
+
+.comparison-table [class*=col-]:first-child:hover {
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.comparison-table [class*=col-]:first-child:hover .pricing-card {
+  margin: 0;
+  box-shadow: none;
+}
+
+.comparison-table .pricing-feature li {
+  background: #fff;
+  text-align: center;
+}
+
+.comparison-table .pricing-feature li i {
+  line-height: normal;
+}
+
+.comparison-table .pricing-feature li span, .comparison-table .pricing-feature li i {
+  float: none;
+}
+
+.comparison-table .pricing-feature li:nth-child(2n+1) {
+  background: #eee;
+}
+
+.comparison-table .ribbon {
+  left: calc(100% - 124px);
+}
+
+.list-feature {
+  z-index: 0;
+}
+
+.list-feature .pricing-header {
+  background: #fff !important;
+  padding: 30px 15px;
+  border-bottom-color: #ddd !important;
+  text-align: center;
+  margin-top: -2px;
+}
+
+.list-feature .pricing-header h5 {
+  background: #fff !important;
+  color: #424242;
+  font-weight: 500;
+  font-size: 39px;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.list-feature .pricing-header p {
+  color: #444;
+  margin-top: 5px;
+}
+
+.list-feature .pricing-feature {
+  text-align: left;
+}
+
+.pricing-col {
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pricing-col:hover {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.pricing-col:hover > .pricing-card {
+  top: 0px;
+  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+  z-index: 101;
+}
+
+.pricing-col:hover > .pricing-card .pricing-footer {
+  height: 120px;
+}
+
+.pricing-col:hover > .pricing-card .pricing-footer a {
+  bottom: -20px;
+  position: relative;
+}
+
+.pricing-col.current {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.current {
+  top: 0;
+}
+
+.current .pricing-card {
+  z-index: 100;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.25);
+}
+
+.current .pricing-footer {
+  height: 120px;
+}
+
+.current .pricing-footer a {
+  bottom: -20px;
+  position: relative;
+}
+
+.current:hover {
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+  top: -20px;
+}
+
+.current:hover .pricing-footer {
+  height: 120px;
+}
+
+.current:hover .pricing-footer a {
+  bottom: -20px;
+  position: relative;
+}
+
+/* ======================== */
+/*   Tooltips               */
+/* ======================== */
+.tooltip {
+  outline: none;
+  color: inherit;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  /* webkit text rendering fix */
+  cursor: help;
+  border-bottom: 1px dotted;
+  font-weight: normal !important;
+}
+
+.tooltip .tooltip-content {
+  border-radius: 4px;
+  position: absolute;
+  color: #111;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  line-height: 1.6;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: Roboto;
+  padding: 15px;
+  bottom: 36px;
+  left: -10px;
+  margin: 0 auto;
+  z-index: 9999;
+  width: 200px;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+}
+
+.tooltip .tooltip-content:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  background: #f9f9f9;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 0;
+}
+
+.tooltip:hover span {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* ======================== */
+/*   Button Color       */
+/* ======================== */
+.btn-act {
+  font-family: Roboto;
+  line-height: normal;
+  padding: 9px 26px;
+  border: 2px solid;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #666;
+  vertical-align: middle;
+  will-change: opacity, transform;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+}
+
+.btn-act.rounded {
+  border-radius: 50px;
+}
+
+.btn-act.boxed {
+  border-radius: 0;
+}
+
+.btn-act.btn-uppercase {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.btn-act.btn-capitalize {
+  text-transform: capitalize;
+}
+
+.btn-act span {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.2s linear;
+          transition: left 0.2s linear;
+}
+
+.btn-act i {
+  -webkit-transition: margin-left 0.2s linear;
+          transition: margin-left 0.2s linear;
+  opacity: 0;
+  margin-left: 0;
+  position: absolute;
+  line-height: inherit;
+}
+
+.btn-act:hover {
+  border-color: initial;
+  background: initial;
+}
+
+.btn-act:hover span {
+  left: -0.3em;
+}
+
+.btn-act:hover i {
+  opacity: 1;
+  margin-left: 0.25em;
+}
+
+.btn-act.btn-line {
+  background: #fff;
+  border-color: #616161;
+  color: #616161;
+}
+
+.btn-act.btn-line:hover {
+  border-color: #212121;
+  background: #212121;
+  color: #fff;
+}
+
+.btn-act.btn-bg {
+  background: #616161;
+  border-color: #616161;
+  color: #fff;
+}
+
+.btn-act.btn-bg:hover {
+  background: #212121;
+  border-color: #212121;
+}
+
+.title-page{
+  margin-bottom:60px; 
+  color: #484848;
+  font-size:30px;
+}
+
+.content{
+  padding: 60px;
+  padding-bottom: 200px;
+}
+
+/*=====================================================================
+    MENU
+======================================================================*/
+  .matraz_menu { width:100%; padding: 15px 0; z-index:999; display:block; float:left; background: #eee; border-bottom:1px solid #dedede;margin-bottom: 120px;}
+  .matraz_mainmenu { float:right; display:block; margin-top:10px; margin-bottom: 10px;}
+  .matraz_mainmenu li {
+    float: left;
+    margin: 0 5px 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+  }
+  .matraz_mainmenu li a {
+    border-radius: 2px 2px 2px 2px;
+    color: #2c3e50;
+    font-family: Helvetica;
+    padding: 10px;
+    font-weight:600;
+  }
+  .matraz_mainmenu li:hover a,
+  .matraz_mainmenu li.active a{
+    background: #1abc9c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .matraz_mainmenu li.active:hover a{
+    background: #424242;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+
+/*=====================================================================
+    MOBILE MENU
+======================================================================*/
+  .matraz_menu .logo {
+    margin-left: auto;
+    margin-top: 5px;
+    width: 150px;
+  }
+  .trac_mobtrac_menu { text-align:center; display:none; }
+  .trac_mobtrac_menu li { padding:10px 0; }
+  .trac_mobilelink_button  { display:none; margin-right:10px; cursor:pointer; margin-top:10px; }
+
+  .logo{
+    float: left;
+  }
+  .logo h1{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }

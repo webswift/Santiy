@@ -1,0 +1,97 @@
+/*custom helpers*/
+
+.text-left-forced {
+	text-align:left !important;
+}
+
+.billingTotal {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.billingTotal-black {
+    color: #fff;
+    background-color: #000;
+    border-color: #fff;
+}
+.billingTotal {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.text-white {
+    color: #FFFFff;
+}
+
+/*dashboard page, add new lead*/
+.header-addnewlead {
+    float: left;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    float: left;
+    color: #1d2939;
+    border-right: 1px solid #eee;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
+
+.header-addnewlead:hover {
+    color: #1d2939;
+    background-color: #f7f7f7;
+}
+
+.header-addnewlead .fa,
+.header-addnewlead .glyphicon {
+    margin: 14px 0 0 15px;
+}
+
+/*margins*/
+.ma5 {
+	margin: 5px;
+}
+
+.mt3 {
+	margin-top: 3px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+/*paddings*/
+.pa3 {
+	padding: 3px;
+}
+
+.pa5 {
+	padding: 5px;
+}
+
+/*borders*/
+.border-right-1-gray {
+	border:0;
+	border-right: 1px solid #eee;
+}
+
+/*cursors*/
+.cursor_pointer {
+	cursor:pointer;
+}
+
+/* vertial align for controls */
+@media (min-width: 768px) 
+{
+.form-control-mt7 {
+	margin-top: 7px;
+}
+}
+

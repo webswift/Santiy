@@ -1,0 +1,94 @@
+.person-name {
+	font-size:18px;
+	height: 3.5em;
+    display: inline-block;
+}
+.people-item .media-object {
+	border-radius: 50%;
+	border:0px;
+	vertical-align: middle;
+}
+
+.last-active-user {
+	height: 2.5em;
+}
+
+.people-item .media > .col-md-2:first-child {
+	min-width:110px;
+	padding-top:4px;
+	padding-left:7px;
+	margin-right:3px;
+}
+
+@media screen and (max-width: 768px) {
+	.people-item .media > .col-md-2:first-child {
+		display:none;
+	}
+}
+
+.tab-content {
+	background:inherit !important;
+}
+.nav-tabs-custom {
+
+}
+.nav-tabs-custom {
+   background: white;
+}
+
+.nav-tabs-custom > li > a {
+   color: #999;
+}
+
+.nav-tabs-custom > li > a:hover {
+   color: #fff;
+}
+.nav-tabs-custom > li > a:hover {
+   background: none;
+   color: #333;
+}
+.nav-tabs-custom > li.active > a,
+.nav-tabs-custom > li.active > a:hover,
+.nav-tabs-custom > li.active > a:focus {
+	color: #428bca;
+	text-decoration: underline;
+	border: 0;
+	background: 0 0;
+}
+
+.nav-tabs-custom > li > a:hover, 
+.nav-tabs-custom > li > a:focus {
+    text-decoration: none;
+	background: 0 0;
+}
+
+.nav-tabs-custom > li > span {
+	border: 0;
+	padding: 14px 20px;
+	position: relative;
+    display: block;
+	line-height: 1.42857143;
+}
+
+.nav-tabs-custom > li > span.nav-caption {
+	padding: 14px 5px 14px 20px;
+}
+
+.letter-list {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none; 
+    box-shadow: none; 
+}
+
+.letter-list li.active a {
+    color: #fff;
+    background: #428BCA;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.editableform .control-group {
+    white-space: normal;
+}

@@ -1,0 +1,275 @@
+/* here you can put your own css to customize and override the theme */
+.price-container{
+	margin-bottom: 20px; 
+	width: 90%;
+}
+@media (max-width: 992px) {
+	.price-container{
+		margin-bottom: 20px; 
+		width: 100%;
+	}
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    /*width: 100%;*/
+}
+.owl-carousel .owl-wrapper-outer {
+    text-align: center;
+}
+
+/* CSS BY MITHU */
+.read-more {
+	text-decoration: underline;
+	color: #57c8eb;
+}
+.section-gray { background: #F9F9F9;}
+.row-padding-small {
+	padding: 50px 0;
+}
+.section-padding {
+	padding: 0px 0;
+}
+.capture-leads {
+	position: relative;
+	z-index: 0;
+}
+.capture-leads::after {
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    height: 100px;
+    content: "";
+    top: 0;
+    right: -5px;
+    border-right: 1px dotted #DDDDDD;
+}
+.capture-leads h3, .improve-workflow h3,.capture-leads a, .improve-workflow a, .data-driven h3, .visitor-tracking h3{
+    color: #57c8eb;
+}
+
+.capture-leads p {}
+.capture-leads img, .improve-workflow img, .data-driven img, .visitor-tracking img {
+    float: left;;
+    margin-right: 20px;
+}
+
+.data-driven, .improve-workflow, .visitor-tracking, .capture-leads  {
+    padding-right: 40px;
+}
+#mass-email {
+	background: #F9F9F9;
+}
+.data-driven {
+	position: relative;
+	z-index: 0;
+}
+.data-driven::after {
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    height: 100px;
+    content: "";
+    top: 0;
+    right: -5px;
+    border-right: 1px dotted #DDDDDD;
+}
+#fully-customizable .tab-content {
+	background: #fff!important;    
+	text-align: center;
+}
+#pricing-tab, .tab-content {
+	background: #F4F4F4!important;   
+}
+
+#fully-customizable .pagination>li>a, #fully-customizable .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #333;
+    text-decoration: none;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+.form-builder-image {
+    text-align: center;
+}
+.form-builder-image img{
+    width: 80%;
+}
+.follow-left-image {
+	width: 100%;
+}
+.follow-right {
+    margin-top: 40px;
+    padding-right: 135px;
+}
+.follow-right img { 
+	margin-top: 30px;
+}
+.view-update-left {
+        padding: 12%;
+}
+.view-update-right-col {
+    
+}
+.img-side.img-right {
+    right: 0;
+}
+.img-side {
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+.img-holder {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.plug{
+	
+}
+.plug::after, .mail-merge::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    border-right: 1px dotted #DDDDDD;
+    height: 100px;
+    width: 1px;
+    top: 0;
+    right: 0;
+}
+.mail-merge{}
+.doc{}
+.plug, .mail-merge, .doc {
+    padding-right: 20px;
+    position: relative;
+	z-index: 0;
+}
+.plug h4, .mail-merge h4, .doc h4{
+	color: #57c8eb;
+}
+.plug img, .mail-merge img, .doc img {
+    float: left;
+    margin-right: 20px;
+}
+.plug p, .mail-merge p, .doc p {}
+.nutshell-left img {width: 100%;}
+.nutshell-right {
+    margin-top: 30px;
+}
+
+.view-update-right-col {
+    position: relative;
+    overflow: hidden;
+    background-size: cover!important;
+    background-repeat: no-repeat !important;
+    min-height: 500px;
+}
+#lead-management { padding-top: 50px }
+
+/* OWL Caraousel */
+.owl-theme .owl-controls .owl-page span {
+    border-radius: 50%!important;
+}
+div#owl-example {
+    margin-top: 48px;
+}
+#owl-example .owl-pagination {
+    position: absolute;
+    top: -42px;
+    left: 42%;
+}
+.owl-theme .owl-controls .owl-page.active span {
+    background: #1BBD2C;
+}
+#pricing-tab {
+	background: #F4F4F4;
+}
+.tab-content {
+    background: #F4F4F4;
+}
+.simple-price img {
+	margin-top: 20px;
+}
+.singn-up-wrap.text-center {
+    padding-top: 40px;
+}
+a.signup-btn {
+    color: #fff;
+    background: #E02222;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+.crm-google-app {
+    padding: 80px;
+}
+.padding-bottom{
+	padding-bottom: 30px;
+}
+#price-table-sec {
+	padding: 10px 30px;
+}
+.mass-image img {
+    width: 100%;
+    padding-left: 85px;
+}
+.row.data-padding {
+    padding-top: 20px;
+}
+#myCarousel, .carousel-control.right, .carousel-control.left { background: none;}
+#myCarousel .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 80%!important;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+#myCarousel .carousel-indicators {
+    left: 45%;
+    top: 0;
+}
+#myCarousel .carousel-indicators li {
+    width: 18px;
+    height: 18px;
+    margin: 0 9px 0 0;
+    background: transparent;
+    border: solid 2px #c9cdce;
+    border-radius: 18px !important;
+    z-index: 9999 !important;
+    background: #869791;
+}
+#myCarousel .carousel-indicators li.active {
+    background: #1BBD2C;
+    border-color: #1BBD2C;
+}
+
+.nav-tabs {
+    margin-left: 0;
+}
+
+/* Responsive Fix*/
+
+@media (max-width: 767px){
+	#fully-customizable .pagination { float: none!important; }
+	#step-1 h1, #step-2 h1, #step-2 h1 { font-size: 26px; }
+	.site-logo { margin-right: 15px; }
+	.data-driven, .improve-workflow, .visitor-tracking, .capture-leads { padding-right: 0; text-align: center;}
+	.capture-leads img, .improve-workflow img, .data-driven img, .visitor-tracking img { float: none; margin-right: 0;}
+	.capture-leads h3, .improve-workflow h3, .data-driven h3, .visitor-tracking h3 {color: #57c8eb;font-size: 18px;}
+	.follow-right { padding-right: 0; }
+	.view-update-left { padding: 6%; }
+	.plug, .mail-merge, .doc { padding-right: 0; }
+	.plug::after, .mail-merge::after, .capture-leads::after { display: none;}
+	#owl-example .owl-pagination { left: 23%;}
+	#owl-example .owl-item {width: 100%;}
+	.mass-image img { padding-left: 0; }
+	.main h1 {font-size: 28px;}
+
+}

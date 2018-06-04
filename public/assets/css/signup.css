@@ -1,0 +1,16 @@
+/* additional styles for /signup /login pages
+ */
+body.signin {
+    background: white;
+}
+
+.btn-signup {
+   background-color: #0cb4ce;
+}
+
+.btn-signup:hover,
+.btn-signup:active,
+.btn-signup.active 
+{
+   background-color: #07a4be;
+}

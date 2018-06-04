@@ -1,0 +1,21 @@
+/home/sanityos/sos/storage/logs/laravel.log {
+        daily
+        missingok
+        rotate 52
+        compress
+        notifempty
+        create 
+	dateext
+	su sanityos www-data
+}
+
+/home/sanityos/sos/storage/logs/PayPal.log {
+        weekly
+        missingok
+        rotate 52
+        compress
+        notifempty
+        create 
+	dateext
+	su sanityos www-data
+}

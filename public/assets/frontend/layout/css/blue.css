@@ -1,0 +1,46 @@
+/* ======================== */
+/*   Color Blue				*/
+/* ========================	*/
+.color-blue .pricing-header {
+  background: #1e88e5;
+}
+
+.color-blue .pricing-header h5 {
+  background: #2196f3;
+}
+
+.color-blue .btn-act.btn-line {
+  background: #fff;
+  border-color: #1e88e5;
+  color: #1e88e5;
+}
+
+.color-blue .btn-act.btn-line:hover {
+  background: #1e88e5;
+  border-color: #1e88e5;
+  color: #fff;
+}
+
+.color-blue .btn-act.btn-bg {
+  background: #1e88e5;
+  border-color: #1e88e5;
+}
+
+.color-blue.style-2 .btn-act.btn-line:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #1e88e5;
+}
+
+.color-blue.style-2 .btn-act.btn-bg {
+  background: #0d47a1;
+  border-color: #0d47a1;
+}
+
+.color-blue.style-2 .pricing-card {
+  background: #2196f3;
+}
+
+.color-blue.style-2 .pricing-feature li {
+  border-color: #1e88e5;
+}

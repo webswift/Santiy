@@ -1,0 +1,164 @@
+<!doctype html>
+<html dir="ltr" lang="en" class="no-js">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>SanityOS Invoice</title>
+
+	<link rel="stylesheet" href="css/reset.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<link rel="stylesheet" href="css/print.css" media="print" />
+
+</head>
+<body>
+<!-- begin markup -->
+
+
+
+<div id="invoice" class="paid">
+
+
+	<div class="this-is">
+		<strong>Invoice</strong>
+	</div><!-- invoice headline -->
+
+
+	<header id="header">
+		<div class="invoice-intro">
+			<img src="img/logo.png"/>
+           
+			
+		</div>
+
+		<table class="invoice-meta">
+			<tr><td class="invoice-number first">Invoice #</td>
+			<td class="second">6859</td></tr>
+			<tr><td class="invoice-date first">Date of Invoice</td>
+			<td class="second">01-24-2012</td></tr>
+			<tr><td class="invoice-due first">Due Date</td>
+			<td class="second">02-10-2012</td></tr>
+		</table>
+	</header>
+	<!-- e: invoice header -->
+
+
+	<section id="parties">
+
+		<div class="invoice-to">
+			<h2>Invoice To:</h2>
+			<div id="hcard-Hiram-Roth" class="vcard">
+			  <a class="url fn" href="#">Customer Name</a>
+				<div class="org">Company Name</div>
+			  <a class="email" href="mailto:email@email.com">Email address</a>
+				
+				<div class="adr">
+					<div class="street-address">Address</div>
+					<span class="locality">City,</span>
+					<span class="country-name">Country</span>
+				</div>
+
+				<div class="tel"></div>
+			</div><!-- e: vcard -->
+		</div><!-- e invoice-to --><!-- e invoice-from -->
+
+
+		<div class="invoice-status">
+			<h3>Invoice Status</h3>
+			<strong>Invoice is <em>Paid</em></strong>
+		</div><!-- e: invoice-status -->
+
+	</section><!-- e: invoice partis -->
+
+
+	<section class="invoice-financials">
+
+		<div class="invoice-items">
+			<table>
+				<caption>Your Invoice</caption>
+				<thead>
+					<tr>
+						<th>Item &amp; Description</th>
+						<th>Quantity</th>
+						<th>Price </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Single License 12 Months @ Sanityos.com</th>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>&nbsp;</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Amounts in words</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div><!-- e: invoice items -->
+
+
+		<div class="invoice-totals">
+			<table>
+				<caption>Totals:</caption>
+				<tbody>
+					<tr>
+						<th>Subtotal:</th>
+						<td></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>Discount/Voucher</th>
+						<td>%</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>Total:</th>
+						<td></td>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="invoice-pay">
+				<h5>Invoice Status:</h5>
+				<ul>
+					<li>
+						<a href="#" class="gcheckout">Checkout with Google</a>
+					</li>
+					<li>
+						<a href="#" class="acheckout">Checkout with Amazon</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- e: invoice totals -->
+
+
+		<div class="invoice-notes">
+			<h6>Notes &amp; Information:</h6>
+			<p>This invoice contains details of your purchase for using SanityOS.com. Your license expiration date can be found under &quot;your profile&quot; in your account. </p>
+			<p>For support and guidance on using Sanityos.com please refer to the Help Topics section.</p>
+			Should you wish to bla bla bla.
+		</div><!-- e: invoice-notes -->
+
+	</section><!-- e: invoice financials -->
+
+
+	<footer id="footer">
+		<p>
+			Please save this PDF file or Print it for future reference.</p>
+	</footer>
+
+
+</div><!-- e: invoice -->
+
+
+</body>
+</html>

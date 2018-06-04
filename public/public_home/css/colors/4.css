@@ -1,0 +1,192 @@
+/*
+
+
+COLOR CODE:  #0785f2
+
+
+*/
+::-webkit-scrollbar-thumb {
+	background: #0785f2;
+}
+
+::selection {
+	background-color: #0785f2;
+}
+
+-webkit-::selection {
+	background-color: #0785f2;
+}
+
+::-moz-selection {
+	background-color: #0785f2;
+}
+
+#scrollUp:hover {
+	background-color: #0785f2;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle {
+	stroke: #0785f2;
+}
+
+#featured-sign-up > a:hover,.subscribe-form-1 form input[type="submit"]:hover,.intro-buttons-2 > a:first-child:hover,.sign-up-form-3 > form > input[type="submit"]:hover,.intro-buttons-4 > a:hover,.sign-up-form-5 form input[type="submit"]:hover,.intro-buttons-6 > a:hover,.intro-buttons-7 > a:hover,.video-section-text > a:hover,.image-container-2-text > a:hover,#featured-price .price-footer > a:hover,.sign-up-section a:hover,.subscribe-widget > form > input[type="submit"]:hover {
+	background: #4c9ee4;
+}
+
+.sign-up-form-holder-5 .policy-text a:hover {
+	color: #4c9ee4;
+}
+
+#featured-sign-up > a {
+	background: #0785f2;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav .current-nav a,.navbar-default .navbar-nav .current a {
+	color: #0785f2 !important;
+}
+
+.subscribe-form-1 form input[type="submit"] {
+	background: #0785f2;
+}
+
+.intro-buttons-2 > a:first-child {
+	background: #0785f2;
+}
+
+.intro-buttons-2 > a:last-child:hover {
+	color: #0785f2;
+}
+
+.intro-buttons-2 > a:last-child:hover i {
+	border: 2px solid #0785f2;
+	color: #0785f2;
+}
+
+.sign-up-form-3 > form > input[type="submit"] {
+	background: #0785f2;
+}
+
+.intro-buttons-4 > a {
+	background: #0785f2;
+}
+
+.intro-buttons-4 > a:last-child:hover {
+	color: #0785f2;
+}
+
+.sign-up-form-5 form input[type="text"]:focus,.sign-up-form-5 form input[type="email"]:focus,.sign-up-form-5 form input[type="password"]:focus {
+	border: 2px solid #0785f2;
+}
+
+.sign-up-form-5 form input[type="submit"] {
+	background: #0785f2;
+}
+
+.sign-up-form-holder-5 .policy-text a {
+	color: #0785f2;
+}
+
+.intro-buttons-6 > a {
+	background: #0785f2;
+}
+
+.intro-buttons-6 > a:last-child:hover {
+	color: #0785f2;
+}
+
+.intro-buttons-7 > a {
+	background: #0785f2;
+}
+
+.intro-buttons-7 > a:last-child:hover {
+	color: #0785f2;
+}
+
+.breadcrumb-section{
+	background:#0785f2;
+}
+
+.single-key-feature > i {
+	color: #0785f2;
+}
+
+.video-section-text > a {
+	background: #0785f2;
+}
+
+.image-container-1-text > a:hover {
+	background: #0785f2;
+	border: 2px solid #0785f2;
+}
+
+.single-feature > i {
+	color: #0785f2;
+}
+
+.image-container-2-text > a {
+	background: #0785f2;
+}
+
+.single-service > i {
+	background: #0785f2;
+}
+
+.single-service > a:hover {
+	background: #0785f2;
+}
+
+.social-profile > a > i:hover {
+	color: #0785f2;
+}
+
+.member-info {
+	background: rgba(7,133,242,0);
+}
+
+.single-member:hover .member-info {
+	background: rgba(7,133,242,0.9);
+}
+
+.work-info {
+	background: #0785f2;
+}
+
+.work-link {
+	border-left: 1px solid #e9e9e9;
+}
+
+.work-link:hover {
+	background: #0785f2;
+}
+
+.plan-price {
+	background: #0785f2;
+}
+
+.price-footer > a:hover {
+	background: #0785f2;
+}
+
+#featured-price {
+	background: #0785f2;
+}
+
+.question-number {
+	color: #0785f2;
+}
+
+.quote-icon {
+	color: #0785f2;
+}
+
+.sign-up-section {
+	background: #0785f2;
+}
+
+.sign-up-section a {
+	color: #0785f2;
+}
+
+.subscribe-widget > form > input[type="submit"] {
+	background: #0785f2;
+}
